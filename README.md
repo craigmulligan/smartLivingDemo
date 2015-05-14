@@ -36,13 +36,14 @@ There are 2 flavours of the IOT library. Use a library according to your needs.
   3. Push code to your device. 
     - git clone this repository to your local machine
     ```
-    $ git clone https://github.com/craig-mulligan/raspberrypi-python-client.git 
+    $ git clone https://github.com/craig-mulligan/smartLivingDemo.git 
     ```
     - add your resin remote. (found at the top right of your dashboard)
     ```
     $ git remote add resin git@git.resin.io:USERNAME/APPNAME.git
     ```
-  4. Create a device in your smartliving dashboard and get the device credentials ready for the next step. 
+  4. Create an account on smartliving.io
+    - Create a device in your smartliving dashboard and get the device credentials ready for the next step. 
 
   5. Configure your variables
     - In the resin.io application envirmoment variables tab add the following Keys with values from you smartliving security credentials. 
@@ -54,7 +55,8 @@ There are 2 flavours of the IOT library. Use a library according to your needs.
     - LEDPIN : "The pin your connect you LED to on the grovePi"
 
   6. Set up your rules in on your smartliving dashboard. 
-
+    - Set if button == true then LED == true else LED == false
+    - you could also set up a email alert when the LED is switched. 
 
 
 ### Extra info
