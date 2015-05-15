@@ -16,7 +16,7 @@ This is a basic demo that just switches on a LED when you hold down a button. Bu
 
 ## Create an account on [resin.io](https://resin.io/).
 * Create an app and download its os
-* Burn the os to sd and insert that into the device, more details (here)[http://docs.resin.io/#/pages/installing/gettingStarted.md#burning-the-os-image-onto-the-sd-card]
+* Burn the os to sd and insert that into the device, more details [here](http://docs.resin.io/#/pages/installing/gettingStarted.md#burning-the-os-image-onto-the-sd-card)
 * Wait for you device appear on the dashboard. 
     ![alt text](http://i.imgur.com/d9qJZ4v.png "resin.io dashboard")
 	
@@ -44,7 +44,7 @@ $ git push resin master
     
 * The first push may take a fair few minutes, resin.io is pushing a full container, including the OS and all the dependencies over the air to your device, which can take sometime if you network is slow. 
     
-## Create an account on smartliving.io
+## Create an account on [smartliving.io](http://www.smartliving.io/)
 
 * Create a device in your smartliving dashboard and get the device credentials ready for the next step. 
 
