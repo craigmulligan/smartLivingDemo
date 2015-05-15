@@ -7,7 +7,7 @@ This is a basic demo that just switches on a LED when you hold down a button. Bu
 
 ### Instructions
 
-  ## Setup the raspberry pi hardware
+## Setup the raspberry pi hardware
     - Grove kit shield
     - Push button to A2
     - Led light to D4 
