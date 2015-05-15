@@ -20,26 +20,33 @@ This is a basic demo that just switches on a LED when you hold down a button. Bu
 * Wait for you device appear on the dashboard. 
     ![alt text](http://i.imgur.com/d9qJZ4v.png "resin.io dashboard")
 	
-## Push code to your device. 
+## Push code to your device 
+
 *git clone this repository to your local machine
-    ```
-    $ git clone https://github.com/craig-mulligan/smartLivingDemo.git 
-    ```
+
+```
+$ git clone https://github.com/craig-mulligan/smartLivingDemo.git 
+```
+
 * add your resin remote. (found at the top right of your dashboard)
-    ```
-    $ git remote add resin git@git.resin.io:USERNAME/APPNAME.git
-    ```
+
+```
+$ git remote add resin git@git.resin.io:USERNAME/APPNAME.git
+```
+
 * push your code. You should be presented with a unicorn when it successfully builds and pushes your image to the resin servers.
     
-    ```
-    $ git push resin master
-    ```
+```
+$ git push resin master
+```
+
 ![alt text](http://i.imgur.com/oErRyzs.png "resin.io dashboard")
     
 * The first push may take a fair few minutes, resin.io is pushing a full container, including the OS and all the dependencies over the air to your device, which can take sometime if you network is slow. 
     
 ## Create an account on smartliving.io
-    - Create a device in your smartliving dashboard and get the device credentials ready for the next step. 
+
+* Create a device in your smartliving dashboard and get the device credentials ready for the next step. 
 
 ## Configure your variables
 * In the resin.io application envirmoment variables tab add the following Keys with values from you smartliving security credentials. 
