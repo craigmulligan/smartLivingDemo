@@ -7,20 +7,20 @@ This is a basic demo that just switches on a LED when you hold down a button. Bu
 
 ### Instructions
 
-  1. Setup the raspberry pi hardware
+  ## Setup the raspberry pi hardware
     - Grove kit shield
     - Push button to A2
     - Led light to D4 
     - Connect to internet
     - Have an sd card ready.
 
-  2. Create an account on [resin.io](https://resin.io/).
+  ## Create an account on [resin.io](https://resin.io/).
     - Create an app and download its os
     - Burn the os to sd and insert that into the device, more details (here)[http://docs.resin.io/#/pages/installing/gettingStarted.md#burning-the-os-image-onto-the-sd-card]
     - Wait for you device appear on the dashboard. 
     ![alt text](http://i.imgur.com/d9qJZ4v.png "resin.io dashboard")
 	
-  3. Push code to your device. 
+  ## Push code to your device. 
     - git clone this repository to your local machine
     ```
     $ git clone https://github.com/craig-mulligan/smartLivingDemo.git 
@@ -38,10 +38,10 @@ This is a basic demo that just switches on a LED when you hold down a button. Bu
     
     - The first push may take a fair few minutes, resin.io is pushing a full container, including the OS and all the dependencies over the air to your device, which can take sometime if you network is slow. 
     
-  4. Create an account on smartliving.io
+  ## Create an account on smartliving.io
     - Create a device in your smartliving dashboard and get the device credentials ready for the next step. 
 
-  5. Configure your variables
+  ## Configure your variables
     - In the resin.io application envirmoment variables tab add the following Keys with values from you smartliving security credentials. 
 
     - DEVICEID : "YourDeviceIdHere"
@@ -51,7 +51,7 @@ This is a basic demo that just switches on a LED when you hold down a button. Bu
     - LEDPIN : "The pin your connect you LED to on the grovePi" (defaults to 4)
     ![alt text](http://i.imgur.com/x17hbcY.png "Envars")
 
-  6. Set up your rules in on your smartliving dashboard. 
+  ## Set up your rules in on your smartliving dashboard. 
     - We have already initialised a button sensor & a LED actuator via the API, so they should be present in your device deashboard. Now we just need to set rules to allow them to interact. 
     - Set if button == true then LED == true else LED == false
     ![alt text](http://i.imgur.com/dkLqyo8.png "set rules")
