@@ -1,4 +1,4 @@
-Smartliving + resin.io
+Smartliving.io + resin.io + grovePi
 ==========
 
 Smartliving is a realtime messaging platform which leverages if/then/else rules to make things really easy. Resin.io is a deployment platform that pushes docker containers to your device with a simple git push. Which makes provisioning and deploying code easy as Pi. I've combined these two to with grovePi to make things EVEN easier. 
