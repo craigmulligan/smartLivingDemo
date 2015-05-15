@@ -10,7 +10,7 @@ from time import sleep
 import os   # access runtime vars
 
 #set up the ATT internet of things platform
-IOT.DeviceId = os.getenv('DEVICEID')
+IOT.DeviceId = os.getenv('DEVICEID') 
 IOT.ClientId = os.getenv('CLIENTID')
 IOT.ClientKey = os.getenv('CLIENTKEY')
 
@@ -18,11 +18,11 @@ IOT.ClientKey = os.getenv('CLIENTKEY')
 #and to create a unique assetId which is a combination of deviceID+Pin number. The Pin number can be any value between (0 - 2^63)
 
 sensorName = "Button"            		    #name of the sensor
-sensorPin = int(os.getenv('BUTTONPIN'))
+sensorPin = int(os.getenv('BUTTONPIN')) || 2
 sensorPrev = False                                  #previous value of the sensor (only send a value when a change occured)
 
 actuatorName = "Diode"
-actuatorPin = int(os.getenv('LEDPIN'))
+actuatorPin = int(os.getenv('LEDPIN')) || 4
 
 #set up the pins
 grovepi.pinMode(sensorPin,"INPUT")

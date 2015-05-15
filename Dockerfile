@@ -1,4 +1,4 @@
-FROM resin/rpi-raspbian:wheezy-2015-02-08
+FROM resin/rpi-raspbian:wheezy-2015-05-06
 
 RUN apt-get update 
 
